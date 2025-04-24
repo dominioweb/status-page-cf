@@ -3826,9 +3826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dominioweb-status-page-cf@workspace:.":
+"status-page-cf@workspace:.":
   version: 0.0.0-use.local
-  resolution: "dominioweb-status-page-cf@workspace:."
+  resolution: "status-page-cf@workspace:."
   dependencies:
     autoprefixer: "npm:^10.0.2"
     flareact: "npm:^0.10.1"

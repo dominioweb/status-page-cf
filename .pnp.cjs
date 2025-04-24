@@ -10,14 +10,14 @@ const RAW_RUNTIME_STATE =
   ],\
   "dependencyTreeRoots": [\
     {\
-      "name": "dominioweb-status-page-cf",\
+      "name": "status-page-cf",\
       "reference": "workspace:."\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["dominioweb-status-page-cf", ["workspace:."]]\
+    ["status-page-cf", ["workspace:."]]\
   ],\
   "fallbackPool": [\
   ],\
@@ -5227,11 +5227,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["dominioweb-status-page-cf", [\
+    ["status-page-cf", [\
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["dominioweb-status-page-cf", "workspace:."],\
+          ["status-page-cf", "workspace:."],\
           ["autoprefixer", "virtual:3a5e2e37dea3c6d21dc89f07141cfdf2047e486c65ba4e245af3a8204f6a4d97884f5958585b523df59ce858e7b37a4550c116216f3b384dae614c00204733b0#npm:10.4.21"],\
           ["flareact", "virtual:3a5e2e37dea3c6d21dc89f07141cfdf2047e486c65ba4e245af3a8204f6a4d97884f5958585b523df59ce858e7b37a4550c116216f3b384dae614c00204733b0#npm:0.10.1"],\
           ["laco", "npm:1.2.1"],\
