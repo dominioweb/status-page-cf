@@ -3826,25 +3826,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"status-page-cf@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "status-page-cf@workspace:."
-  dependencies:
-    autoprefixer: "npm:^10.0.2"
-    flareact: "npm:^0.10.1"
-    laco: "npm:^1.2.1"
-    laco-react: "npm:^1.1.0"
-    node-fetch: "npm:^2.6.1"
-    postcss: "npm:^8.2.13"
-    postcss-cli: "npm:^8.3.0"
-    prettier: "npm:^2.2.0"
-    react: "npm:^16.13.1"
-    react-dom: "npm:^16.13.1"
-    tailwindcss: "npm:^2.0.1"
-    yaml-loader: "npm:^0.6.0"
-  languageName: unknown
-  linkType: soft
-
 "domutils@npm:^1.7.0":
   version: 1.7.0
   resolution: "domutils@npm:1.7.0"
@@ -10104,6 +10085,25 @@ __metadata:
   checksum: 10c0/284f5865a9e19d079f1badbcd70d5f9f82e7a08393f818a220839cd5f71729e89105e1c95322bd28e833161d484cee671380ca443869ae89578eef2bf55c0653
   languageName: node
   linkType: hard
+
+"status-page-cf@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "status-page-cf@workspace:."
+  dependencies:
+    autoprefixer: "npm:^10.0.2"
+    flareact: "npm:^0.10.1"
+    laco: "npm:^1.2.1"
+    laco-react: "npm:^1.1.0"
+    node-fetch: "npm:^2.6.1"
+    postcss: "npm:^8.2.13"
+    postcss-cli: "npm:^8.3.0"
+    prettier: "npm:^2.2.0"
+    react: "npm:^16.13.1"
+    react-dom: "npm:^16.13.1"
+    tailwindcss: "npm:^2.0.1"
+    yaml-loader: "npm:^0.6.0"
+  languageName: unknown
+  linkType: soft
 
 "statuses@npm:2.0.1":
   version: 2.0.1
