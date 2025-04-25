@@ -21,3 +21,11 @@ monitors:
     expectStatus: 200
     linkable: true
     followRedirect: false
+
+  - id: react-dominioweb-com-mx
+    name: react.dominioweb.com.mx
+    url: "http://react.dominioweb.com.mx"
+    method: GET
+    expectStatus: 200
+    linkable: true
+    followRedirect: false
