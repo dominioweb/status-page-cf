@@ -2,7 +2,7 @@ settings:
   title: "Status Page"
   url: "https://status-page.testing.dev"
   logo: "logo-192x192.png"
-  daysInHistogram: 90
+  daysInHistogram: 10
   collectResponseTimes: true
   allmonitorsOperational: "All Systems Operational"
   notAllmonitorsOperational: "Not All Systems Operational"
@@ -14,9 +14,9 @@ settings:
   dayInHistogramNotOperational: "incident(s)"
 
 monitors:
-  - id: dominiowebcommx
-    name: dominiowebcommx
-    url: "https://dominioweb.com.mx"
+  - id: dominioweb-com-mx
+    name: dominioweb.com.mx
+    url: "http://dominioweb.com.mx"
     method: GET
     expectStatus: 200
     linkable: true
