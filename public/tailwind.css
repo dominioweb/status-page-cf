@@ -92,7 +92,7 @@
   .pill a .text-xl {
   font-size: .8rem;
   }
-  .histogram {
+  .card .histogram {
     height: .7rem !important;
   }
   .card .text-sm {
