@@ -66,7 +66,7 @@
     @apply visible opacity-100 scale-100;
   }
 
-  .card {
+  .status-custom-card {
     padding: 0.5rem !important;
     width: 24%;
     position: relative !important;
@@ -79,27 +79,26 @@
     padding: 0.35rem !important;
     font-size: 0.6rem;
   }
-  .flex {
+  .status-custom-card .flex {
     display: flex;
     width: 100%;
   }
-  .pill {
+  .status-custom-card .pill {
     position: absolute;
   }
-  .pill a {
+  .status-custom-card .pill a {
     margin-top: 30px;
   }
-  .pill a .text-xl {
+  .status-custom-card .pill a .text-xl {
   font-size: .8rem;
   }
-  .card .histogram {
+  .status-custom-card .histogram {
     height: .7rem !important;
   }
-  .card .text-sm {
+  .status-custom-card .text-sm {
     font-size: 0.6rem;
   }
-
-  .card .mb-2 {
-    /* margin-bottom: 0.5rem; */
+  .status-custom-card .mb-2 {
+    margin-bottom: 0.5rem;
   }
 }
