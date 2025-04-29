@@ -106,6 +106,12 @@
   #__flareact .container .status-footer{
     display: none !important;
   }
+  @media (min-width: 640px) {
+    .status-custom-card {
+      width: 48% !important;
+      padding: 0.5rem !important;
+    }
+  }
   @media screen and (min-width: 769px) {
     #__flareact .container{
       max-width: 768px !important;
