@@ -67,7 +67,7 @@
   }
 
   .status-custom-card {
-    padding: 0 !important;
+    padding: .3rem !important;
     width: 24%;
     position: relative !important;
     display: inline-block !important;
@@ -102,6 +102,10 @@
   }
   .status-custom-card .mb-2 {
     margin-bottom: 0 !important;
+  }
+  .p-4 .flex img{
+    background-color: rgb(26, 29, 34);
+    padding: 0.3rem;
   }
   #__flareact .container .status-footer{
     display: none !important;
