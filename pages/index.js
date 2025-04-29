@@ -88,7 +88,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             />
           )
         })}
-        <div className="flex flex-row justify-between mt-4 text-sm footer">
+        <div className="flex flex-row justify-between mt-4 text-sm status-footer">
           <div>
             Powered by{' '}
             <a href="https://workers.cloudflare.com/" target="_blank">
