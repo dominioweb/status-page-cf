@@ -84,15 +84,17 @@
     width: 100%;
   }
   .status-custom-card .pill {
-    position: absolute;
-  }
-  .status-custom-card .pill a {
+    display: none !important;
     font-size: 0.6rem !important;
   }
+
   .status-custom-card .flex a .text-xl {
     font-size: .75rem !important;
+  }
+  .status-custom-card .flex .title-name {
     margin-top: 30px !important;
   }
+
   .status-custom-card .histogram {
     height: .3rem !important;
   }
@@ -100,7 +102,7 @@
     font-size: 0.6rem !important;
   }
   .status-custom-card .mb-2 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0 !important;
   }
   #__flareact .container .status-footer{
     display: none !important;
