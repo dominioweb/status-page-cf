@@ -87,18 +87,22 @@
     position: absolute;
   }
   .status-custom-card .pill a {
+    
+  }
+  .status-custom-card .flex a .text-xl {
+    font-size: .75rem;
     margin-top: 30px;
   }
-  .status-custom-card .pill a .text-xl {
-  font-size: .8rem;
-  }
   .status-custom-card .histogram {
-    height: .7rem !important;
+    height: .3rem !important;
   }
   .status-custom-card .text-sm {
-    font-size: 0.6rem;
+    font-size: 0.6rem !important;
   }
   .status-custom-card .mb-2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  .footer{
+    display: none;
   }
 }
