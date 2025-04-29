@@ -87,11 +87,11 @@
     position: absolute;
   }
   .status-custom-card .pill a {
-    
+    font-size: 0.6rem !important;
   }
   .status-custom-card .flex a .text-xl {
-    font-size: .75rem;
-    margin-top: 30px;
+    font-size: .75rem !important;
+    margin-top: 30px !important;
   }
   .status-custom-card .histogram {
     height: .3rem !important;
@@ -103,6 +103,6 @@
     margin-bottom: 0.5rem !important;
   }
   .footer{
-    display: none;
+    display: none !important;
   }
 }
