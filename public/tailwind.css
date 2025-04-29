@@ -102,7 +102,7 @@
   .status-custom-card .mb-2 {
     margin-bottom: 0.5rem !important;
   }
-  .footer{
+  #__flareact .container .footer{
     display: none !important;
   }
 }
