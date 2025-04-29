@@ -68,7 +68,7 @@
 
   .status-custom-card {
     padding: .3rem !important;
-    width: 24%;
+    width: 18%;
     position: relative !important;
     display: inline-block !important;
     margin: 0.5% !important;
@@ -88,7 +88,8 @@
   }
 
   .status-custom-card .flex a .text-xl {
-    font-size: .75rem !important;
+    font-size: .6rem !important;
+    line-height: 1.4rem !important;
   }
   .status-custom-card .flex .title-name {
     /*margin-top: 30px !important;*/
