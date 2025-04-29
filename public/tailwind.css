@@ -103,7 +103,7 @@
   .status-custom-card .mb-2 {
     margin-bottom: 0 !important;
   }
-  .p-4 .flex img{
+  #__flareact .container .p-4 .flex img{
     background-color: rgb(26, 29, 34);
     padding: 0.3rem;
   }
