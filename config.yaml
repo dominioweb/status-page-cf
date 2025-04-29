@@ -1,7 +1,7 @@
 settings:
   title: "Website Status Dashboard"
-  url: "https://status-page.testing.dev"
-  logo: "logo-192x192.png"
+  url: "https://status-page-cf-production.ricardo-stagle.workers.dev"
+  logo: "logo-dominio.png"
   daysInHistogram: 10
   collectResponseTimes: true
   allmonitorsOperational: "All Systems Operational"
