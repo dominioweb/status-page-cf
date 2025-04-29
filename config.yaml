@@ -1,5 +1,5 @@
 settings:
-  title: "Status Website Dashboard"
+  title: "Website Status Dashboard"
   url: "https://status-page.testing.dev"
   logo: "logo-192x192.png"
   daysInHistogram: 10
@@ -15,7 +15,7 @@ settings:
 
 monitors:
   - id: dominioweb-com-mx
-    name: dominioweb.com.mx
+    name: www.dominioweb.com.mx
     url: "https://www.dominioweb.com.mx"
     method: GET
     expectStatus: 200

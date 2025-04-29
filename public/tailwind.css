@@ -67,7 +67,7 @@
   }
 
   .status-custom-card {
-    padding: 0.5rem !important;
+    padding: 0 !important;
     width: 24%;
     position: relative !important;
     display: inline-block !important;
@@ -76,7 +76,6 @@
     box-shadow: none !important;
     float: left !important;
     top: 10px;
-    padding: 0.35rem !important;
     font-size: 0.6rem;
   }
   .status-custom-card .flex {
