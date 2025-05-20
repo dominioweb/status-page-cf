@@ -1,6 +1,6 @@
 name = "status-page-cf"
 main = "index.js"
-workers_dev = false
+workers_dev = true
 account_id = "adb055aaf8325420af12ab37aef224ab"
 compatibility_date = "2025-05-20"
 type = "webpack"
