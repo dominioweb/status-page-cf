@@ -1,5 +1,5 @@
 import config from '../../config.yaml'
-
+console.log(config);
 import {
   notifySlack,
   notifyTelegram,
