@@ -4851,9 +4851,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flareact@npm:0.10.0":
-  version: 0.10.0
-  resolution: "flareact@npm:0.10.0"
+"flareact@npm:0.10.1":
+  version: 0.10.1
+  resolution: "flareact@npm:0.10.1"
   dependencies:
     "@babel/core": "npm:^7.11.0"
     "@babel/plugin-transform-runtime": "npm:^7.11.0"
@@ -4892,7 +4892,7 @@ __metadata:
     react-dom: ^16.13.1
   bin:
     flareact: src/bin/flareact.js
-  checksum: 10c0/80753dc8b320a334a7138958c3c2c61dd8f94eaf410e2a29a6b0f3b1aa414c921985c87513224082efec50bdbcd452ed456c7b55fa801d830fa06cf6d124a667
+  checksum: 10c0/80d3060cdbbaa2d844644e6a8e15794bccae8727b5f506ea6ffb61ba85f8f38eb9c48fed4996d00d1d267f1872081228ce528fbaecdcf9696607e60dbc88eb29
   languageName: node
   linkType: hard
 
@@ -10514,7 +10514,7 @@ __metadata:
   resolution: "status-page-cf@workspace:."
   dependencies:
     autoprefixer: "npm:^10.0.2"
-    flareact: "npm:0.10.0"
+    flareact: "npm:0.10.1"
     laco: "npm:^1.2.1"
     laco-react: "npm:^1.1.0"
     node-fetch: "npm:^2.6.1"
