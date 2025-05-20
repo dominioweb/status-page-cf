@@ -1,6 +1,6 @@
 settings:
-  title: "Website Status Dashboard"
-  url: "https://status-page-cf-production.ricardo-stagle.workers.dev"
+  title: "Websites Status Dashboard"
+  url: "https://websites.dominioweb.workers.dev"
   logo: "logo-dominio.png"
   daysInHistogram: 10
   collectResponseTimes: true

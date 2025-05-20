@@ -13,6 +13,6 @@ crons = ["*/30 * * * *"]
 [env.production]
 name = "websites"
 main = "index.js"
-kv-namespaces = [{binding="KV_STATUS_PAGE", id="3de7706b702349fc9d0628752a3add4c"}]
+kv_namespaces = [{binding="KV_STATUS_PAGE", id="3de7706b702349fc9d0628752a3add4c"}]
 zone_id="0caac60f8550d9e02499e8b4ef870e16"
 route="websites.dominioweb.com.mx/*"
