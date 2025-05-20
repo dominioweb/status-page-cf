@@ -13,23 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v3
-    - name: enable corepack
-      run: corepack enable
-    - name: Set Node.js
-      uses: actions/setup-node@v4
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
       with:
-        node-version: 20
-        cache: 'yarn'
-    - name: Run install
-      uses: borales/actions-yarn@v4
-      with:
-        cmd: install # will run `yarn install` command
+        node-version: 12
+    - run: yarn install
     - run: yarn build
       env:
         NODE_ENV: production
     - name: Publish
-      uses: cloudflare/wrangler-action@v4
+      uses: cloudflare/wrangler-action@v3
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |
