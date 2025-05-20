@@ -27,7 +27,7 @@ jobs:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |
           npx wrangler kv namespace create KV_STATUS_PAGE || true
-          export KV_NAMESPACE_ID=$(npx wrangler kv namespace list | jq "." | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
+          KV_NAMESPACE_ID=$(npx wrangler kv namespace list | jq "." | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
           echo "[env.production]" > wrangler.toml
           echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" > wrangler.toml
         postCommands: |
