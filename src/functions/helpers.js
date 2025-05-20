@@ -2,14 +2,15 @@
 import { useEffect, useState } from 'react'
 
 const yaml = require('yaml-loader')
+const fetch = require('node-fetch')
+const fs = require('fs')
 
 function loadConfig() {
-  const configFile = fs.readFileSync('../../config.yaml', 'utf8')
+  const configFile = fs.readFileSync('../config.yaml', 'utf8')
   const config = yaml(configFile)
   return JSON.parse(config)
 }
-
-const config = loadConfig();
+const config = loadConfig()
 
 const kvDataKey = 'monitors_data_v1_1'
 
