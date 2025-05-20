@@ -1,5 +1,10 @@
-
-import config from '../../config.yaml?'
+const yaml = require('yaml-loader')
+function loadConfig() {
+  const configFile = fs.readFileSync('../../config.yaml', 'utf8')
+  const config = yaml(configFile)
+  return JSON.parse(config)
+}
+const config = loadConfig();
 
 import {
   notifySlack,
