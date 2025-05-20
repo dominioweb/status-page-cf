@@ -1,8 +1,10 @@
 name = "status-page-cf"
-main = "index.js"
+#main = "index.js"
 workers_dev = true
 account_id = "adb055aaf8325420af12ab37aef224ab"
 compatibility_date = "2025-05-20"
+type = "webpack"
+webpack_config = "node_modules/flareact/webpack"
 
 [triggers]
 crons = ["*/30 * * * *"]
@@ -10,8 +12,6 @@ crons = ["*/30 * * * *"]
 # uncomment and adjust following if you are not using GitHub Actions
 [env.production]
 name = "websites"
-main = "index.js"
+#main = "index.js"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="3de7706b702349fc9d0628752a3add4c"}]
 route="websites.dominioweb.com.mx/*"
-type = "webpack"
-webpack_config = "node_modules/flareact/webpack"
