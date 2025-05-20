@@ -27,7 +27,6 @@ jobs:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |
           wrangler kv:namespace create KV_STATUS_PAGE || true
-          echo "[env.production]" > wrangler.toml
         postCommands: |
           yarn kv-gc
         environment: production
