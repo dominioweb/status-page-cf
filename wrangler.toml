@@ -9,10 +9,6 @@ compatibility_date = "2025-05-20"
 [triggers]
 crons = ["*/30 * * * *"]
 
-[site]
-bucket = "out"
-#entry-point = "./"
-
 # uncomment and adjust following if you are not using GitHub Actions
 [env.production]
 name = "websites"
