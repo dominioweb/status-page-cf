@@ -1,8 +1,6 @@
 name = "status-page-cf"
 main = "index.js"
 workers_dev = true
-#type = "webpack"
-#webpack_config = "node_modules/flareact/webpack"
 account_id = "adb055aaf8325420af12ab37aef224ab"
 compatibility_date = "2025-05-20"
 
@@ -14,5 +12,6 @@ crons = ["*/30 * * * *"]
 name = "websites"
 main = "index.js"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="3de7706b702349fc9d0628752a3add4c"}]
-zone_id="0caac60f8550d9e02499e8b4ef870e16"
 route="websites.dominioweb.com.mx/*"
+type = "webpack"
+webpack_config = "node_modules/flareact/webpack"

@@ -1,4 +1,5 @@
-import config from "../../config.yaml"
+import React from 'react';
+import config from '../../config.yaml?'
 
 import {
   notifySlack,

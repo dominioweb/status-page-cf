@@ -1,6 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const {
   WranglerJsCompatWebpackPlugin,
 } = require("wranglerjs-compat-webpack-plugin");
@@ -9,7 +7,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ya?ml$/,
+        test: /\.yaml$/,
+        include: path.resolve('src/functions/'),
+        loader: 'yaml',
         oneOf: [
           {
             resourceQuery: /stream/,

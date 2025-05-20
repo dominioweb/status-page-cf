@@ -1,0 +1,31 @@
+settings:
+  title: "Websites Status Dashboard"
+  url: "https://websites.dominioweb.workers.dev"
+  logo: "logo-dominio.png"
+  daysInHistogram: 10
+  collectResponseTimes: true
+  allmonitorsOperational: "All Systems Operational"
+  notAllmonitorsOperational: "Not All Systems Operational"
+  monitorLabelOperational: "Operational"
+  monitorLabelNotOperational: "Not Operational"
+  monitorLabelNoData: "No data"
+  dayInHistogramNoData: "No data"
+  dayInHistogramOperational: "All good"
+  dayInHistogramNotOperational: "incident(s)"
+
+monitors:
+  - id: dominioweb-com-mx
+    name: www.dominioweb.com.mx
+    url: "https://www.dominioweb.com.mx"
+    method: GET
+    expectStatus: 200
+    linkable: true
+    followRedirect: false
+
+  - id: react-dominioweb-com-mx
+    name: react.dominioweb.com.mx
+    url: "http://react.dominioweb.com.mx"
+    method: GET
+    expectStatus: 200
+    linkable: true
+    followRedirect: false

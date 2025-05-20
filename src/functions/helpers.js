@@ -1,3 +1,4 @@
+import React from 'react';
 import config from '../../config.yaml'
 import { useEffect, useState } from 'react'
 
