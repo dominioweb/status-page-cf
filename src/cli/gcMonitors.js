@@ -64,29 +64,32 @@ getKvMonitors(kvMonitorsKey)
       return key.id
     })
 
-    if ((stateMonitors.monitors !== null && stateMonitors.monitors !== undefined)) {
-
-    Object.keys(stateMonitors.monitors).map((monitor) => {
-      // remove monitor data from state if missing in config
-      if (!configMonitors.includes(monitor)) {
-        delete stateMonitors.monitors[monitor]
-      }
-
-      // delete dates older than config.settings.daysInHistogram
-      let date = new Date()
-      date.setDate(date.getDate() - config.settings.daysInHistogram)
-      date.toISOString().split('T')[0]
-      const cleanUpDate = date.toISOString().split('T')[0]
-
-      Object.keys(stateMonitors.monitors[monitor].checks).map((checkDay) => {
-        if (checkDay < cleanUpDate) {
-          delete stateMonitors.monitors[monitor].checks[checkDay]
+    if (stateMonitors !== null && stateMonitors !== undefined) {
+      console.error(" stateMonitors :");
+      console.error(stateMonitors);
+      console.error(" stateMonitors.monitors :");
+      console.error(stateMonitors.monitors);
+      Object.keys(stateMonitors.monitors).map((monitor) => {
+        // remove monitor data from state if missing in config
+        if (!configMonitors.includes(monitor)) {
+          delete stateMonitors.monitors[monitor]
         }
+
+        // delete dates older than config.settings.daysInHistogram
+        let date = new Date()
+        date.setDate(date.getDate() - config.settings.daysInHistogram)
+        date.toISOString().split('T')[0]
+        const cleanUpDate = date.toISOString().split('T')[0]
+
+        Object.keys(stateMonitors.monitors[monitor].checks).map((checkDay) => {
+          if (checkDay < cleanUpDate) {
+            delete stateMonitors.monitors[monitor].checks[checkDay]
+          }
+        })
       })
-    })
 
     } else {
-      //console.error("myObject is null or undefined");
+      console.error("myObject is null or undefined");
     }
 
     // sanity check + if good save the KV
