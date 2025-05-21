@@ -1,4 +1,5 @@
-name = "status-page-cf"
+name = "websites"
+#main = "./index.js"
 type = "webpack"
 account_id = ""
 workers_dev = true
@@ -11,6 +12,9 @@ compatibility_flags = [ "nodejs_compat" ]
 #[site]
 bucket = "out"
 entry-point = "./"
+
+[assets]
+directory = "./dist"
 
 [triggers]
 crons = ["*/30 * * * *"]
