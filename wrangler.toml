@@ -9,7 +9,6 @@ webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2025-05-20"
 compatibility_flags = [ "nodejs_compat" ]
 
-#[site]
 bucket = "out"
 entry-point = "./"
 
@@ -19,6 +18,7 @@ entry-point = "./"
 [triggers]
 crons = ["*/30 * * * *"]
 
+[site]
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
 #name = "websites"
