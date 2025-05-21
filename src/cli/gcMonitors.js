@@ -64,6 +64,8 @@ getKvMonitors(kvMonitorsKey)
       return key.id
     })
 
+    if ((stateMonitors.monitors !== null && stateMonitors.monitors !== undefined)) {
+
     Object.keys(stateMonitors.monitors).map((monitor) => {
       // remove monitor data from state if missing in config
       if (!configMonitors.includes(monitor)) {
@@ -82,6 +84,10 @@ getKvMonitors(kvMonitorsKey)
         }
       })
     })
+
+    } else {
+      //console.error("myObject is null or undefined");
+    }
 
     // sanity check + if good save the KV
     if (configMonitors.length === Object.keys(stateMonitors.monitors).length) {

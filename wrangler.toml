@@ -1,27 +1,19 @@
-name = "websites"
-#main = "./index.js"
-type = "webpack"
-account_id = ""
+name = 'websites-status-dashboard'
 workers_dev = true
-route = ""
-zone_id = ""
+account_id = ""
+type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
-compatibility_date = "2025-05-20"
-compatibility_flags = [ "nodejs_compat" ]
-
-[site]
-bucket = "out"
-entry-point = "./"
-
-#[assets]
-#directory = "./dist"
+compatibility_date = "2025-05-21"
 
 [triggers]
 crons = ["*/30 * * * *"]
 
+#[site]
+bucket = "out"
+entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
-#name = "websites"
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="c54dd5e27d6a474faebab038fa23d872"}]
-#route="websites.dominioweb.com.mx/*"
+#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
+#zone_id="xxx"
+#route="xxx"

@@ -1,5 +1,5 @@
-import { processCronTrigger } from './src/functions/cronTrigger'
 import { handleEvent } from "flareact";
+import { processCronTrigger } from './src/functions/cronTrigger'
 
 /**
  * The DEBUG flag will do two things that help during development:
