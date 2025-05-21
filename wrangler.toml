@@ -9,12 +9,12 @@ compatibility_flags = [ "nodejs_compat" ]
 [triggers]
 crons = ["*/30 * * * *"]
 
-#[site]
+[site]
 bucket = "out"
 entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
-#[env.production]
-#name = "websites"
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="3de7706b702349fc9d0628752a3add4c"}]
-#route="websites.dominioweb.com.mx/*"
+[env.production]
+name = "websites"
+#kv-namespaces = [{binding="KV_STATUS_PAGE", id="c54dd5e27d6a474faebab038fa23d872"}]
+route="websites.dominioweb.com.mx/*"
