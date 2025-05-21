@@ -1,18 +1,16 @@
 name = "status-page-cf"
-workers_dev = true
-account_id = ""
 type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
 webpack_config = "node_modules/flareact/webpack"
-
 compatibility_date = "2025-05-20"
 compatibility_flags = [ "nodejs_compat" ]
+entry-point = "./"
 
 [triggers]
 crons = ["*/30 * * * *"]
-
-[site]
-bucket = "out"
-entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
