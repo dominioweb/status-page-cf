@@ -18,4 +18,4 @@ entry-point = "./"
 #[env.production]
 #name = "websites"
 #kv-namespaces = [{binding="KV_STATUS_PAGE", id="c54dd5e27d6a474faebab038fa23d872"}]
-route="websites.dominioweb.com.mx/*"
+#route="websites.dominioweb.com.mx/*"
