@@ -3,18 +3,18 @@ workers_dev = true
 account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
+bucket = "out"
+entry-point = "./"
 compatibility_date = "2025-05-20"
 compatibility_flags = [ "nodejs_compat" ]
 
 [triggers]
 crons = ["*/30 * * * *"]
 
-[site]
-bucket = "out"
-entry-point = "./"
+#[site]
 
 # uncomment and adjust following if you are not using GitHub Actions
-[env.production]
+#[env.production]
 name = "websites"
 #kv-namespaces = [{binding="KV_STATUS_PAGE", id="c54dd5e27d6a474faebab038fa23d872"}]
 route="websites.dominioweb.com.mx/*"
