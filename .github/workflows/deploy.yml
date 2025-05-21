@@ -30,8 +30,6 @@ jobs:
           export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler@1 kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
           echo "[env.production]" >> wrangler.toml
           echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
-        postCommands: |
-          yarn kv-gc
         environment: production
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}

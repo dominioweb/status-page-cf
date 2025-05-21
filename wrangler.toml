@@ -13,8 +13,8 @@ compatibility_flags = [ "nodejs_compat" ]
 bucket = "out"
 entry-point = "./"
 
-[assets]
-directory = "./dist"
+#[assets]
+#directory = "./dist"
 
 [triggers]
 crons = ["*/30 * * * *"]
