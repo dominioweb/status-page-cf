@@ -9,7 +9,7 @@ compatibility_flags = [ "nodejs_compat" ]
 [triggers]
 crons = ["*/30 * * * *"]
 
-[site]
+#[site]
 bucket = "out"
 entry-point = "./"
 
