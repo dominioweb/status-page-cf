@@ -1,7 +1,7 @@
-
+import config from '../../config.yaml'
 import { useEffect, useState } from 'react'
 
-const yaml = require('yaml-loader')
+/*const yaml = require('yaml-loader')
 const fetch = require('node-fetch')
 const fs = require('fs')
 
@@ -10,7 +10,8 @@ function loadConfig() {
   const config = yaml(configFile)
   return JSON.parse(config)
 }
-const config = loadConfig()
+const config = loadConfig()*/
+
 
 const kvDataKey = 'monitors_data_v1_1'
 

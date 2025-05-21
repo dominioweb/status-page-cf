@@ -1,4 +1,4 @@
-const yaml = require('yaml-loader')
+/*const yaml = require('yaml-loader')
 const fetch = require('node-fetch')
 const fs = require('fs')
 
@@ -7,7 +7,8 @@ function loadConfig() {
   const config = yaml(configFile)
   return JSON.parse(config)
 }
-const config = loadConfig()
+const config = loadConfig()*/
+import config from '../../config.yaml'
 
 import {
   notifySlack,
