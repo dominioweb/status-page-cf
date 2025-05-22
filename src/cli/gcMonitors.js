@@ -57,12 +57,22 @@ function loadConfig() {
 
 getKvMonitors(kvMonitorsKey)
   .then(async (kvMonitors) => {
+
+    console.error(" kvMonitors :");
+    console.error(kvMonitors);
+
     let stateMonitors = kvMonitors
 
     const config = loadConfig()
+    console.error(" config :");
+    console.error(config);
+
     const configMonitors = config.monitors.map((key) => {
       return key.id
     })
+
+    console.error(" configMonitors :");
+    console.error(configMonitors);
 
     if (stateMonitors !== null && stateMonitors !== undefined) {
       console.error(" stateMonitors :");
