@@ -8,7 +8,7 @@ compatibility_date = "2025-05-21"
 [triggers]
 crons = ["*/30 * * * *"]
 
-#[site]
+[site]
 bucket = "out"
 entry-point = "./"
 
