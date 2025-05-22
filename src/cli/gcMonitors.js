@@ -58,6 +58,12 @@ function loadConfig() {
 getKvMonitors(kvMonitorsKey)
   .then(async (kvMonitors) => {
 
+    console.error(" kvMonitorsKey :");
+    console.error(kvMonitors);
+
+    console.error(" kvMonitors :");
+    console.error(kvMonitors);
+
     let stateMonitors = kvMonitors;
 
     const config = loadConfig()
@@ -66,8 +72,8 @@ getKvMonitors(kvMonitorsKey)
       return key.id
     })
 
-    if (config.monitors != null && config.monitors != undefined) {
-      Object.keys(config.monitors).map((monitor) => {
+    if (stateMonitors.monitors != null && stateMonitors.monitors != undefined) {
+      Object.keys(stateMonitors.monitors).map((monitor) => {
         // remove monitor data from state if missing in config
         if (!configMonitors.includes(monitor)) {
           delete stateMonitors.monitors[monitor]
