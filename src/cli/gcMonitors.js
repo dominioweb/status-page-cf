@@ -58,6 +58,9 @@ function loadConfig() {
 getKvMonitors(kvMonitorsKey)
   .then(async (kvMonitors) => {
 
+    console.error(" kvMonitorsKey :");
+    console.error(kvMonitors);
+
     console.error(" kvMonitors :");
     console.error(kvMonitors);
 
@@ -74,7 +77,7 @@ getKvMonitors(kvMonitorsKey)
     console.error(" configMonitors :");
     console.error(configMonitors);
 
-    if (stateMonitors !== null && stateMonitors !== undefined) {
+    if (stateMonitors.monitors !== null || stateMonitors.monitors !== undefined) {
       console.error(" stateMonitors :");
       console.error(stateMonitors);
       console.error(" stateMonitors.monitors :");
