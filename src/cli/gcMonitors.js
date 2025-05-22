@@ -77,7 +77,7 @@ getKvMonitors(kvMonitorsKey)
     console.error(" configMonitors :");
     console.error(configMonitors);
 
-    if (stateMonitors.monitors !== null || stateMonitors.monitors !== undefined) {
+    if (stateMonitors.monitors !== null || stateMonitors.monitors !== 'undefined') {
       console.error(" stateMonitors :");
       console.error(stateMonitors);
       console.error(" stateMonitors.monitors :");
