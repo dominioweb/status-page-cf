@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
+  repository_dispatch:
+  schedule:
+    - cron: '0 0 1 * *'
 
 jobs:
   deploy:
@@ -14,7 +20,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 20
-    - run: yarn config set registry https://registry.npmjs.org
     - run: yarn install
     - run: yarn build
       env:

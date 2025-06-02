@@ -26,6 +26,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@cloudflare/kv-asset-handler", "npm:0.4.0"],\
           ["autoprefixer", "virtual:d5ff7dbf24feae55f436d7491a4c96c49ec4d6e81b11818b283f145a024877f7a751b2b0bc039ec1c80fb5189c5a55ef6175b92b4ba82e25b5961d53962e4fa8#npm:10.4.21"],\
           ["flareact", "virtual:d5ff7dbf24feae55f436d7491a4c96c49ec4d6e81b11818b283f145a024877f7a751b2b0bc039ec1c80fb5189c5a55ef6175b92b4ba82e25b5961d53962e4fa8#npm:0.10.1"],\
           ["laco", "npm:1.2.1"],\
@@ -2151,6 +2152,14 @@ const RAW_RUNTIME_STATE =
           ["@cloudflare/workers-types", "npm:2.2.2"],\
           ["@types/mime", "npm:2.0.3"],\
           ["mime", "npm:2.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.4.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@cloudflare-kv-asset-handler-npm-0.4.0-4254216067-10c0.zip/node_modules/@cloudflare/kv-asset-handler/",\
+        "packageDependencies": [\
+          ["@cloudflare/kv-asset-handler", "npm:0.4.0"],\
+          ["mime", "npm:3.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8359,6 +8368,13 @@ const RAW_RUNTIME_STATE =
           ["mime", "npm:2.6.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mime-npm-3.0.0-8d911e4c06-10c0.zip/node_modules/mime/",\
+        "packageDependencies": [\
+          ["mime", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["mime-db", [\
@@ -12290,6 +12306,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["status-page-cf", "workspace:."],\
+          ["@cloudflare/kv-asset-handler", "npm:0.4.0"],\
           ["autoprefixer", "virtual:d5ff7dbf24feae55f436d7491a4c96c49ec4d6e81b11818b283f145a024877f7a751b2b0bc039ec1c80fb5189c5a55ef6175b92b4ba82e25b5961d53962e4fa8#npm:10.4.21"],\
           ["flareact", "virtual:d5ff7dbf24feae55f436d7491a4c96c49ec4d6e81b11818b283f145a024877f7a751b2b0bc039ec1c80fb5189c5a55ef6175b92b4ba82e25b5961d53962e4fa8#npm:0.10.1"],\
           ["laco", "npm:1.2.1"],\
