@@ -11,6 +11,7 @@ crons = ["*/30 * * * *"]
 [site]
 bucket = "out"
 entry-point = "./"
+entry = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]

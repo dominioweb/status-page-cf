@@ -1,4 +1,4 @@
-import { handleEvent } from "flareact";
+//import { handleEvent } from "flareact";
 import { processCronTrigger } from './src/functions/cronTrigger'
 import {
   getAssetFromKV,
@@ -17,7 +17,7 @@ const DEBUG = false;
 addEventListener("fetch", (event) => {
   try {
     event.respondWith(
-      handleEvent(event, require.context("./pages/", true, /\.(js|jsx|ts|tsx)$/), DEBUG)
+      (event, require.context("./pages/", true, /\.(js|jsx|ts|tsx)$/), DEBUG)
     );
   } catch (e) {
     if (DEBUG) {
