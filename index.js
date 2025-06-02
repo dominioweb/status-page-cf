@@ -1,6 +1,9 @@
 //import { handleEvent } from "flareact";
 import { processCronTrigger } from './src/functions/cronTrigger'
-import { getAssetFromKV, serveSinglePageApp } from '@cloudflare/kv-asset-handler'
+import {
+  getAssetFromKV,
+  mapRequestToAsset,
+} from "@cloudflare/kv-asset-handler";
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -14,7 +17,8 @@ const DEBUG = false;
 addEventListener("fetch", (event) => {
   try {
     event.respondWith(
-      (event, require.context("./pages/", true, /\.(js|jsx|ts|tsx)$/), DEBUG)
+      //handleEvent(event)
+      handleEvent(event, require.context("./pages/", true, /\.(js|jsx|ts|tsx)$/), DEBUG)
     );
   } catch (e) {
     /*if (DEBUG) {
