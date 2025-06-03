@@ -37,6 +37,7 @@ addEventListener('scheduled', (event) => {
   event.waitUntil(processCronTrigger(event))
 })
 
+/*
 async function handleEvent(event) {
   const url = new URL(event.request.url);
   let options = {};
@@ -45,7 +46,7 @@ async function handleEvent(event) {
    * You can add custom logic to how we fetch your assets
    * by configuring the function `mapRequestToAsset`
    */
-
+  /*
   // options.mapRequestToAsset = handlePrefix(/^\/docs/)
   options.mapRequestToAsset = (req) => {
     // First let's apply the default handler, which we imported from
@@ -85,6 +86,7 @@ async function handleEvent(event) {
     });
   }
 }
+*/
 
 /**
  * Here's one example of how to modify a request to
@@ -93,7 +95,7 @@ async function handleEvent(event) {
  * route on a zone, or if you only want your static content
  * to exist at a specific path.
  */
-
+/*
 function handlePrefix(prefix) {
   return (request) => {
     // compute the default (e.g. / -> index.html)
@@ -105,5 +107,4 @@ function handlePrefix(prefix) {
     return new Request(url.toString(), defaultAssetKey);
   };
 }
-
-
+*/
