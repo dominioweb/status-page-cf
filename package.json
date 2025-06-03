@@ -18,7 +18,8 @@
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "web-vitals": "^5.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
