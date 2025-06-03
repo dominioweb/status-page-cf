@@ -1,9 +1,6 @@
 import { handleEvent } from "flareact";
 import { processCronTrigger } from './src/functions/cronTrigger'
-import {
-  getAssetFromKV,
-  mapRequestToAsset,
-} from "@cloudflare/kv-asset-handler";
+import { getAssetFromKV, mapRequestToAsset } from "@cloudflare/kv-asset-handler";
 
 /**
  * The DEBUG flag will do two things that help during development:
@@ -21,18 +18,18 @@ addEventListener("fetch", (event) => {
       handleEvent(event, require.context("./pages/", true, /\.(js|jsx|ts|tsx)$/), DEBUG)
     );
   } catch (e) {
-    /*if (DEBUG) {
+    if (DEBUG) {
       return event.respondWith(
         new Response(e.message || e.toString(), {
           status: 500,
         })
       );
     }
-    event.respondWith(new Response("Internal Error", { status: 500 }));*/
+    event.respondWith(new Response("Internal Error", { status: 500 }));
     // Fall back to serving `/index.html` on errors.
-    return getAssetFromKV(event, {
+    /*return getAssetFromKV(event, {
       mapRequestToAsset: req => new Request(`${new URL(req.url).origin}/index.html`, req),
-    })
+    })*/
   }
 });
 
