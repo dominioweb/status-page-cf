@@ -14,7 +14,7 @@
     "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
-    "flareact": "^0.10.1",
+    "flareact": "^0.0.7",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
     "react": "^16.13.1",
@@ -31,5 +31,6 @@
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "yaml-loader": "^0.6.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
