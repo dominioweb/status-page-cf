@@ -1,4 +1,4 @@
-name = 'status-page-cf-dominio'
+name = 'websites'
 workers_dev = true
 account_id = ""
 type = "webpack"

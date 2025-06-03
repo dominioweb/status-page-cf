@@ -1,5 +1,5 @@
 settings:
-  title: "Website Dominio"
+  title: "Websites Dominio"
   url: "https://status-page-cf-production.ricardo-stagle.workers.dev"
   logo: "logo-dominio.png"
   daysInHistogram: 10
