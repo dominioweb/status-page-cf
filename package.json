@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@cloudflare/kv-asset-handler": "^0.4.0",
-    "flareact": "^0.10.1",
+    "flareact": "^0.0.2",
     "html-webpack-plugin": "^5.6.3",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
@@ -32,5 +32,6 @@
     "tailwindcss": "^2.0.1",
     "webpack-cli": "^6.0.1",
     "yaml-loader": "^0.6.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }
